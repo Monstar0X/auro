@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: quorum
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - {key: BOT_TOKEN, sync: false}
+      - {key: API_ID, sync: false}
+      - {key: API_HASH, sync: false}
+      - {key: PUBLIC_URL, sync: false}
+      - {key: MINIAPP_LINK, sync: false}
+      - {key: DB_PATH, value: /app/data/quorum.db}

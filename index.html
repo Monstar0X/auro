@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Quorum</title>
+<link rel="stylesheet" href="/style.css">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+<header>
+  <div class="logo">Quorum</div>
+  <nav id="tabs">
+    <button data-tab="swipe" class="on">Swipe</button>
+    <button data-tab="board">Verdict</button>
+    <button data-tab="dna">My DNA</button>
+  </nav>
+</header>
+<main>
+  <section id="swipe" class="tab on">
+    <div id="night-meta" class="meta"></div>
+    <div id="deck"></div>
+    <div id="actions">
+      <button id="b-veto" class="round veto" title="Veto - removes it for everyone">🚫</button>
+      <button id="b-nope" class="round nope" title="Nope">✕</button>
+      <button id="b-super" class="round sup" title="Super like">★</button>
+      <button id="b-like" class="round like" title="Like">♥</button>
+    </div>
+    <p class="hint">Swipe right = like · left = nope · up = super · 🚫 = veto for the whole group</p>
+  </section>
+  <section id="board" class="tab"><div id="board-body"></div></section>
+  <section id="dna" class="tab"><div id="dna-body"></div></section>
+</main>
+<div id="toast"></div>
+<script src="/app.js"></script>
+</body>
+</html>

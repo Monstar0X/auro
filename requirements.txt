@@ -1,0 +1,5 @@
+# The engine, API server and Mini App are pure standard library + Pillow.
+# Only the Telegram front-end needs Kurigram (same fork your Poster bot already uses).
+kurigram==2.2.26
+TgCrypto==1.2.5
+pillow>=10.1
